@@ -53,8 +53,6 @@ const widgetOptions = [
   }
 ]
 
-getDxyHealthCalendar()
-
 // 渲染组件内容
 renderWidget(widgetOptions)
 setWidgetBackground()
