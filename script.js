@@ -5,7 +5,7 @@
 // These must be at the very top of the file. Do not edit.
 // icon-color: light-gray; icon-glyph: magic;
 
-// 背景图片配置
+// 背景图片配置，目录同级放一个和脚本名一样的 png 图片
 const BACKGROUND_IMAGE_NAME = `${Script.name()}.png`
 // 行间距
 const LINE_HEIGHT = 5
@@ -89,8 +89,10 @@ function renderWidget(options = []) {
  */
 function setWidgetBackground() {
   const files = FileManager.local()
-  var base_path = "/var/mobile/Library/Mobile Documents/iCloud~dk~simonbs~Scriptable/Documents/" + BACKGROUND_IMAGE_NAME;
-  widget.backgroundImage = files.readImage(base_path)
+  var filePath = "/var/mobile/Library/Mobile Documents/iCloud~dk~simonbs~Scriptable/Documents/" + BACKGROUND_IMAGE_NAME;
+  if (files.fileExists(filePath)) {
+    widget.backgroundImage = files.readImage(filePath)
+  }
 }
 
 /**
