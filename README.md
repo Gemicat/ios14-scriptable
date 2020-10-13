@@ -39,13 +39,7 @@
 
 ## 背景图设置
 
-背景图只要把一个 `script.png` 名字的图片放到和 `script.js` 同级目录即可。
+打开 `scriptable` app，点击 `script` 这个大区块，然后按照提示就可以生成背景图，不需要手动截图
 
-![image](./images/icloud.jpeg)
-
-如果图片的后缀不是 `.png` 的话，只需编辑 `script.js`，把里面的后缀改成你自己图片格式。
-
-![image](./images/step6.jpeg)
-
-对于 `透明背景`，其实是设置了和你用的壁纸在这一块一样的一张图，可以自己裁剪，或者根据即友的教程自行处理 [okjike.com](https://web.okjike.com/originalPost/5f7122dd2161af001843e7c9)
+![image](./images/step4.jpeg)
 
